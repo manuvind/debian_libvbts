@@ -1,0 +1,1 @@
+../../../../share/pyshared/libvbts/FreeSwitchMessenger.py

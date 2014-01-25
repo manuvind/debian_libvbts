@@ -1,0 +1,41 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security
+dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): -D_FORTIFY_SOURCE=2
+dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security
+dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): -Wl,-Bsymbolic-functions -Wl,-z,relro
+dpkg-buildpackage: source package libvbts
+dpkg-buildpackage: source version 0.0.1-1
+dpkg-buildpackage: source changed by Kurtis Heimerl <kheimerl@cs.berkeley.edu>
+ dpkg-source --before-build libvbts-0.0.1
+ fakeroot debian/rules clean
+dh clean --with python2
+   dh_testdir
+   dh_auto_clean
+running clean
+removing 'build/lib.linux-x86_64-2.7' (and everything under it)
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-2.7' does not exist -- can't clean it
+removing 'build'
+   dh_clean
+ dpkg-source -b libvbts-0.0.1
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building libvbts using existing ./libvbts_0.0.1.orig.tar.gz
+dpkg-source: info: building libvbts in libvbts_0.0.1-1.debian.tar.gz
+dpkg-source: info: building libvbts in libvbts_0.0.1-1.dsc
+ dpkg-genchanges -S >../libvbts_0.0.1-1_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build libvbts-0.0.1
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+W: libvbts source: debhelper-overrides-need-versioned-build-depends (>= 7.0.50~)
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile libvbts_0.0.1-1.dsc Kurtis Heimerl <kheimerl@cs.berkeley.edu>
+gpg: WARNING: unsafe ownership on configuration file `/home/xray/.gnupg/gpg.conf'
+gpg: WARNING: unsafe ownership on configuration file `/home/xray/.gnupg/gpg.conf'
+gpg: skipped "Kurtis Heimerl <kheimerl@cs.berkeley.edu>": secret key not available
+gpg: /tmp/debsign.A3mM7YsQ/libvbts_0.0.1-1.dsc: clearsign failed: secret key not available
+debsign: gpg error occurred!  Aborting....

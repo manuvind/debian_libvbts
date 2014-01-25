@@ -1,0 +1,10 @@
+Package: python-libvbts
+Source: libvbts
+Version: 0.0.1-1
+Architecture: all
+Maintainer: Kurtis Heimerl <kheimerl@cs.berkeley.edu>
+Installed-Size: 140
+Depends: python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8)
+Section: python
+Priority: optional
+Description: VBTS Tools for supporting community networks

@@ -1,0 +1,1 @@
+../../../../share/pyshared/libvbts-0.0.1.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+Source: libvbts
+Maintainer: Kurtis Heimerl <kheimerl@cs.berkeley.edu>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-smspdu, python-all (>= 2.6.6-3), debhelper (>= 7)
+Standards-Version: 3.9.3
+
+Package: python-libvbts
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: VBTS Tools for supporting community networks
+

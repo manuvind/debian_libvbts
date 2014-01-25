@@ -1,0 +1,71 @@
+Description: Ha
+ Include things.
+ .
+ libvbts (0.0.1-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.6.0+git
+Author: Kurtis Heimerl <kheimerl@cs.berkeley.edu>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- /dev/null
++++ libvbts-0.0.1/libvbts.egg-info/PKG-INFO
+@@ -0,0 +1,10 @@
++Metadata-Version: 1.0
++Name: libvbts
++Version: 0.0.1
++Summary: VBTS Tools for supporting community networks
++Home-page: http://tier.cs.berkeley.edu
++Author: Kurtis Heimerl
++Author-email: kheimerl@cs.berkeley.edu
++License: BSD
++Description: UNKNOWN
++Platform: UNKNOWN
+--- /dev/null
++++ libvbts-0.0.1/libvbts.egg-info/SOURCES.txt
+@@ -0,0 +1,20 @@
++README
++setup.py
++libvbts/Configuration.py
++libvbts/Database.py
++libvbts/FreeSwitchMessenger.py
++libvbts/Messenger.py
++libvbts/SMS_Deliver.py
++libvbts/SMS_Helper.py
++libvbts/SMS_Parse.py
++libvbts/SMS_Parse_Direct.py
++libvbts/SMS_Submit.py
++libvbts/SubscriberRegistry.py
++libvbts/YateMessenger.py
++libvbts/__init__.py
++libvbts/rpdu.py
++libvbts.egg-info/PKG-INFO
++libvbts.egg-info/SOURCES.txt
++libvbts.egg-info/dependency_links.txt
++libvbts.egg-info/requires.txt
++libvbts.egg-info/top_level.txt
+\ No newline at end of file
+--- /dev/null
++++ libvbts-0.0.1/libvbts.egg-info/requires.txt
+@@ -0,0 +1 @@
++smspdu
+\ No newline at end of file
+--- /dev/null
++++ libvbts-0.0.1/libvbts.egg-info/dependency_links.txt
+@@ -0,0 +1 @@
++
+--- /dev/null
++++ libvbts-0.0.1/libvbts.egg-info/top_level.txt
+@@ -0,0 +1 @@
++libvbts

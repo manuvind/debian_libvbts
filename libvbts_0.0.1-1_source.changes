@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Fri, 02 Aug 2013 17:49:09 -0700
+Source: libvbts
+Binary: python-libvbts
+Architecture: source
+Version: 0.0.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: Kurtis Heimerl <kheimerl@cs.berkeley.edu>
+Changed-By: Kurtis Heimerl <kheimerl@cs.berkeley.edu>
+Description: 
+ python-libvbts - VBTS Tools for supporting community networks
+Changes: 
+ libvbts (0.0.1-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.6.0+git
+Checksums-Sha1: 
+ 1c8f699363f2eb052b0cccd96c02208c79de2ad3 858 libvbts_0.0.1-1.dsc
+ 59f4a483402031202e6968f710622c42ef24c953 980171 libvbts_0.0.1.orig.tar.gz
+ e5bc685f860086ca057c2f6e4258037460efacab 1679 libvbts_0.0.1-1.debian.tar.gz
+Checksums-Sha256: 
+ 0d643425b9f224fb847b0e32ee60647a30eee943d5214786324050a8a178adf6 858 libvbts_0.0.1-1.dsc
+ 01d0e1a28988a2bcc5c24b9fd7edf0be2029797a37b3cdad07660462e3f97eb5 980171 libvbts_0.0.1.orig.tar.gz
+ 2142e7cb3853c0dc2f0ccfdf206392a3a2c2bb7c25bfa077313067e3e2ccf42b 1679 libvbts_0.0.1-1.debian.tar.gz
+Files: 
+ ed6d56788b4806a6d89ba779bea75b62 858 python optional libvbts_0.0.1-1.dsc
+ 1abd235668bd4a8dfceeea42a57ac6c5 980171 python optional libvbts_0.0.1.orig.tar.gz
+ 1dbb3a606ce44b859decec9bae248c50 1679 python optional libvbts_0.0.1-1.debian.tar.gz
